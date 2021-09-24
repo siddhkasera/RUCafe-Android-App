@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".CurrentOrder">
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp" android:layout_marginStart="30dp" android:layout_marginRight="30dp"
+            android:layout_marginEnd="30dp" android:layout_marginBottom="30dp">
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="260dp" android:id="@+id/currentOrderListView"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:ems="10"
+                    android:id="@+id/subtotalTextView" android:autofillHints="" android:hint="@string/subtotal"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:ems="10"
+                    android:id="@+id/taxTextView" android:importantForAutofill="no" android:hint="@string/tax"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:ems="10"
+                    android:id="@+id/totalTextView" android:importantForAutofill="no" android:hint="@string/total"/>
+            <Button
+                    android:text="@string/remove_selected_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/removeOrderButton"/>
+            <Button
+                    android:text="@string/place_order"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/placeOrderButton"/>
+        </LinearLayout>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

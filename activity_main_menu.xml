@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" android:orientation="vertical">
+    <View
+            android:id="@+id/divider5"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider"
+    />
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="29dp" app:srcCompat="@drawable/rutgers_logo"
+            android:id="@+id/rutgersLogo" android:contentDescription="@string/coffee_image"/>
+    <TextView
+            android:text="@string/order_coffee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/orderCoffeeText"/>
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp" android:id="@+id/textView3"/>
+    <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="130dp" app:srcCompat="@drawable/coffeee"
+            android:id="@+id/orderCoffee" android:contentDescription="@string/order_coffee_image"/>
+    <View
+            android:id="@+id/divider3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider"
+    />
+    <TextView
+            android:text="@string/order_donut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/orderCoffeeText2"/>
+    <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="130dp" app:srcCompat="@drawable/donuts_image"
+            android:id="@+id/orderDonut" android:contentDescription="@string/donut_image"/>
+    <TextView
+            android:text="@string/your_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/orderCoffeeText3"/>
+    <View
+            android:id="@+id/divider4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider"
+    />
+    <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="130dp" app:srcCompat="@drawable/yourorder"
+            android:id="@+id/yourOrder" android:contentDescription="@string/your_order_image"/>
+    <View
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider"
+    />
+    <TextView
+            android:text="@string/store_orders"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/orderCoffeeText4"/>
+    <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="130dp" app:srcCompat="@drawable/storeorder"
+            android:id="@+id/storeOrder" android:contentDescription="@string/store_order_image"/>
+</LinearLayout>

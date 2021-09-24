@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".DonutFlavorSelection">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="20dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginRight="20dp"
+            android:layout_marginEnd="20dp" app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginLeft="20dp" android:layout_marginStart="20dp" android:layout_marginBottom="20dp">
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="224dp" app:srcCompat="@drawable/donuts_image"
+                android:id="@+id/imageView3" android:contentDescription="@string/donut_image"/>
+        <TextView
+                android:text="@string/choose_a_flavor"
+                android:layout_width="match_parent"
+                android:layout_height="29dp" android:id="@+id/textView2"/>
+        <Button
+                android:text="@string/chocolate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/chocolateButton"/>
+        <Button
+                android:text="@string/strawberry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/strawberryButton"/>
+        <Button
+                android:text="@string/vanilla"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/vanillaButton"/>
+        <Button
+                android:text="@string/glazed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/glazedButton"/>
+        <Button
+                android:text="@string/blueberry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/blueberryButton"/>
+        <Space
+                android:layout_width="match_parent"
+                android:layout_height="32dp"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
